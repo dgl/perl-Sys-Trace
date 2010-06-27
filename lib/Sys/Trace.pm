@@ -143,7 +143,7 @@ terms of the Do What The Fuck You Want To Public License, Version 2, as
 published by Sam Hocevar. See http://sam.zoy.org/wtfpl/COPYING or
 L<Software::License::WTFPL_2> for more details.
 
-=head1 COPYRIGHT & AUTHOR
+=head1 AUTHOR
 
-Copyright (c) David Leadbeater E<lt>L<dgl@dgl.cx>E<gt>, 2010
+David Leadbeater E<lt>L<dgl@dgl.cx>E<gt>, 2010
 
