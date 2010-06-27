@@ -54,7 +54,7 @@ sub new {
 sub call {
   my($self, @calls) = @_;
   # We need chdir to track the working directory, so add iff filtering.
-  push @calls, "-e", "chdir";
+  push @calls, "chdir";
 
   splice @{$self->{run}}, 1, 0, map { ("-e", $_) } @calls;
 }
