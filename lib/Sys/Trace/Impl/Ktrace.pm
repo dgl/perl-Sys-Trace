@@ -111,7 +111,7 @@ sub parse {
 
         # Add additional info
         @cur{@call_names} = $call{args} =~ $call_re;
-        $cur{args} = split /,/, $cur{args};
+        $cur{args} = [split /,/, $cur{args}];
         
       } elsif($call{type} eq 'NAMI') {
         # Name for something
