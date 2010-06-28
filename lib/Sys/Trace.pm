@@ -12,15 +12,27 @@ Sys::Trace - Interface to system call tracing interfaces
 
   use Sys::Trace;
 
-  my $trace = Sys::Trace->new(exec => ["ls"]);
-  $trace->call("open"); # Optional, trace all if not specified
+  my $trace = Sys::Trace->new(exec => [qw(ls foo)]);
 
   $trace->start; # Returns a PID which you can watch
   $trace->wait;  # Alternatively call this to wait on the PID
 
-  $trace->results; # Returns a Sys::Trace::Results object
+  my $result = $trace->results; # Returns a Sys::Trace::Results object
+
+  use Cwd;
+  print $result->files(getcwd . "/"); # Should show an attempt to look at "foo"
+                                      # in the current directory (i.e. "ls
+                                      # foo", above)
 
 =head1 DESCRIPTION
+
+Provides a way to programmatically run or trace a program and see the system
+calls it makes.
+
+This can be useful during testing as a way to ensure a particular file is
+actually opened, or another hard to test interaction actually occurs.
+
+Currently supported tracing mechanisms are strace and ktrace.
 
 =head1 METHODS
 
