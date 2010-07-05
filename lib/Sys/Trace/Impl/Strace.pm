@@ -1,5 +1,4 @@
-package
-  Sys::Trace::Impl::Strace; # Hide from CPAN indexer
+package Sys::Trace::Impl::Strace;
 use strict;
 
 use Cwd ();
@@ -10,7 +9,7 @@ use Text::Balanced qw(extract_quotelike extract_bracketed);
 
 =head1 NAME
 
-Sys::Trace::Strace - Sys::Trace implementation for strace(1)
+Sys::Trace::Impl::Strace - Sys::Trace implementation for strace(1)
 
 =head1 DESCRIPTION
 

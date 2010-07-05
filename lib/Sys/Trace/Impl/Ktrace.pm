@@ -1,5 +1,4 @@
-package
-  Sys::Trace::Impl::Ktrace; # Hide from CPAN indexer
+package Sys::Trace::Impl::Ktrace;
 use strict;
 
 use Cwd ();
