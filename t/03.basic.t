@@ -1,6 +1,7 @@
-use Test::More tests => 3;
+use Test::More;
 use Cwd;
 use Sys::Trace;
+use My::CanTrace tests => 3;
 
 my $trace = Sys::Trace->new(exec => [qw(ls does-not-exist)]);
 isa_ok $trace, "Sys::Trace";

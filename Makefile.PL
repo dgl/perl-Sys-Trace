@@ -9,6 +9,7 @@ bugtracker     'http://github.com/dgl/perl-Sys-Trace/issues';
  
 # Specific dependencies
 requires       'Text::Balanced' => '0';
-no_index       'directory'   => 't';
+no_index       directory   => "t",
+               directory   => "My";
  
 WriteAll;
