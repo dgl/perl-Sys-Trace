@@ -35,3 +35,4 @@
 \b\.*.sw[op]$
 \.git/
 \.tar\.gz$
+\.tar$
