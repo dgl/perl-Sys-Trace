@@ -2,7 +2,7 @@ package Sys::Trace;
 use strict;
 use Sys::Trace::Results;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 =head1 NAME
 
