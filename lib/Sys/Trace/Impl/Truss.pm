@@ -25,7 +25,7 @@ output is close enough).
 
 sub usable {
   system q{truss 2>/dev/null};
-  return POSIX::WIFEXITED($?) && POSIX::WEXITSTATUS($?) == 1;
+  return POSIX::WIFEXITED($?) && POSIX::WEXITSTATUS($?) == 2;
 }
 
 sub new {

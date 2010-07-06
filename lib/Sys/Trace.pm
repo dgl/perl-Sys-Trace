@@ -39,9 +39,9 @@ Currently supported tracing mechanisms are ktrace, strace and truss.
 =cut
 
 our @INTERFACES = qw(
+  Sys::Trace::Impl::Truss
   Sys::Trace::Impl::Strace
   Sys::Trace::Impl::Ktrace
-  Sys::Trace::Impl::Truss
 );
 
 our @ISA;
