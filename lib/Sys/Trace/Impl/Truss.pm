@@ -32,7 +32,7 @@ sub new {
   my($class, %args) = @_;
   my $self = bless {}, $class;
 
-  my @run = qw(strace -d);
+  my @run = qw(truss -d);
 
   if($args{follow_forks}) {
     push @run, "-f";
