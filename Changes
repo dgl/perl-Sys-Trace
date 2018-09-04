@@ -1,3 +1,6 @@
+0.04
+        2018-09-04      Support installs on Perl > 5.26.0 missing . in @INC
+
 0.03    2010-07-05      Generally helps if you remember to update the MANIFEST
 
 0.02    2010-07-05      Add truss support
